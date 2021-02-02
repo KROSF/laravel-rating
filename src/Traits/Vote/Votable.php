@@ -1,8 +1,8 @@
 <?php
 
-namespace Nagy\LaravelRating\Traits\Vote;
+namespace Krosf\LaravelRating\Traits\Vote;
 
-use Nagy\LaravelRating\Models\Rating;
+use Krosf\LaravelRating\Models\Rating;
 
 trait Votable
 {

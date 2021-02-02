@@ -1,12 +1,12 @@
 <?php
 
-namespace Nagy\LaravelRatings\Tests;
+namespace Krosf\LaravelRatings\Tests;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Nagy\LaravelRating\Models\Rating;
-use Nagy\LaravelRating\Tests\TestCase;
-use Nagy\LaravelRating\Tests\Models\User;
-use Nagy\LaravelRating\Tests\Models\Post;
+use Krosf\LaravelRating\Models\Rating;
+use Krosf\LaravelRating\Tests\TestCase;
+use Krosf\LaravelRating\Tests\Models\User;
+use Krosf\LaravelRating\Tests\Models\Post;
 
 class RatingTest extends TestCase
 {

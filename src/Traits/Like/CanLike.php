@@ -1,9 +1,9 @@
 <?php
 
-namespace Nagy\LaravelRating\Traits\Like;
+namespace Krosf\LaravelRating\Traits\Like;
 
 use LaravelRating;
-use Nagy\LaravelRating\Models\Rating;
+use Krosf\LaravelRating\Models\Rating;
 
 trait CanLike
 {

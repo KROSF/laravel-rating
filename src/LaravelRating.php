@@ -1,6 +1,6 @@
 <?php
 
-namespace Nagy\LaravelRating;
+namespace Krosf\LaravelRating;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 
@@ -9,16 +9,24 @@ class LaravelRating
     public function rate($user, $rateable, $value)
     {
         if ($this->isRated($user, $rateable)) {
+            if(is_null($value[1])) {
+                return $user->ratings()
+                            ->where('rateable_id', $rateable->id)
+                            ->where('rateable_type', $this->getRateableByClass($rateable))
+                            ->update(['value' => $value[0]]);
+            }
+
             return $user->ratings()
                         ->where('rateable_id', $rateable->id)
                         ->where('rateable_type', $this->getRateableByClass($rateable))
-                        ->update(['value' => $value]);
+                        ->update(['value' => $value[0], 'review' => $value[1]]);
         }
 
         return $user->ratings()->create([
             'rateable_id'   => $rateable->id,
             'rateable_type' => $this->getRateableByClass($rateable),
-            'value'         => $value
+            'value'         => $value[0],
+            'review'        => $value[1]
         ]);
     }
 

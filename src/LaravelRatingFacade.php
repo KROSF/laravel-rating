@@ -1,6 +1,6 @@
 <?php
 
-namespace Nagy\LaravelRating;
+namespace Krosf\LaravelRating;
 
 use Illuminate\Support\Facades\Facade;
 

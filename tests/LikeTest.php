@@ -1,10 +1,10 @@
 <?php
 
-namespace Nagy\LaravelRatings\Tests;
+namespace Krosf\LaravelRatings\Tests;
 
-use Nagy\LaravelRating\Tests\TestCase;
-use Nagy\LaravelRating\Tests\Models\User;
-use Nagy\LaravelRating\Tests\Models\Post;
+use Krosf\LaravelRating\Tests\TestCase;
+use Krosf\LaravelRating\Tests\Models\User;
+use Krosf\LaravelRating\Tests\Models\Post;
 
 class LikeTest extends TestCase
 {

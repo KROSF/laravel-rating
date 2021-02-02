@@ -1,43 +1,45 @@
 {
-    "name": "nagy/laravel-rating",
-    "description": "manage rating column for elqouent models",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "mohamednagy",
-            "email": "mohamed.n.haleem@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": { "Nagy\\LaravelRating\\": "src/" }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Nagy\\LaravelRating\\Tests\\": "tests/"
-        }
-    },
-    "require": {
-        "php": "^7.0",
-        "illuminate/database": "5.*",
-        "illuminate/support": "5.*"
-    },
-    "require-dev": {
-        "orchestra/testbench": "~3.0",
-        "orchestra/database": "^3.5"
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Nagy\\LaravelRating\\LaravelRatingServiceProvider"
-            ],
-            "aliases": {
-                "LaravelRating" : "Nagy\\LaravelRating\\LaravelRatingFacade"
-            }
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable" : true
+  "name": "krosf/laravel-rating",
+  "description": "manage rating column for elqouent models",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mohamedkrosf",
+      "email": "mohamed.n.haleem@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Krosf\\LaravelRating\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Krosf\\LaravelRating\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "illuminate/database": "5.*",
+    "illuminate/support": "5.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.0",
+    "orchestra/database": "^3.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Krosf\\LaravelRating\\LaravelRatingServiceProvider"
+      ],
+      "aliases": {
+        "LaravelRating": "Krosf\\LaravelRating\\LaravelRatingFacade"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

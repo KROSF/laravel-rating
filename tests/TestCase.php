@@ -1,11 +1,11 @@
 <?php
 
-namespace Nagy\LaravelRating\Tests;
+namespace Krosf\LaravelRating\Tests;
 
 use Illuminate\Support\Facades\Artisan;
-use Nagy\LaravelRating\Tests\Models\User;
+use Krosf\LaravelRating\Tests\Models\User;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Nagy\LaravelRating\LaravelRatingServiceProvider;
+use Krosf\LaravelRating\LaravelRatingServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -54,7 +54,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \Nagy\LaravelRating\LaravelRatingServiceProvider::class,
+            \Krosf\LaravelRating\LaravelRatingServiceProvider::class,
         ];
     }
 
@@ -66,7 +66,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageAliases($app)
     {
         return [
-            "LaravelRating" =>  \Nagy\LaravelRating\LaravelRatingFacade::class,
+            "LaravelRating" =>  \Krosf\LaravelRating\LaravelRatingFacade::class,
         ];
     }
 }

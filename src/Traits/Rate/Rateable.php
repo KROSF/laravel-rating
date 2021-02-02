@@ -1,8 +1,8 @@
 <?php
 
-namespace Nagy\LaravelRating\Traits\Rate;
+namespace Krosf\LaravelRating\Traits\Rate;
 
-use Nagy\LaravelRating\Models\Rating;
+use Krosf\LaravelRating\Models\Rating;
 
 trait Rateable
 {

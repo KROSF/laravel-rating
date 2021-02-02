@@ -1,6 +1,6 @@
 <?php
 
-namespace Nagy\LaravelRating\Models;
+namespace Krosf\LaravelRating\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

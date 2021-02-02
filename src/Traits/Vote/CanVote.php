@@ -1,9 +1,9 @@
 <?php
 
-namespace Nagy\LaravelRating\Traits\Vote;
+namespace Krosf\LaravelRating\Traits\Vote;
 
 use LaravelRating;
-use Nagy\LaravelRating\Models\Rating;
+use Krosf\LaravelRating\Models\Rating;
 
 trait CanVote
 {
